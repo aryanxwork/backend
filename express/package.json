@@ -1,0 +1,15 @@
+{
+  "name": "exp",
+  "version": "1.0.0",
+  "description": "express work",
+  "license": "ISC",
+  "author": "aryan sharma",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
