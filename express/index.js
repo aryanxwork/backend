@@ -10,14 +10,17 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
-    res.send("Contacted Root -> Path");
+    res.send("Root Directory");
 });
+app.get("/ig/:username", (req, res) => {
+    let { username } = req.params;
+    res.send(`Results for @${username}`);
+});
+
 app.get("/search", (req, res) => {
-    res.send("Contacted Search Path");
-});
-app.get("/game", (req, res) => {
-    res.send("Contacted Game Path");
-});
-app.get('*any', (req, res) => {
-    res.send("ERROR : Unidentified Path");
+    let { q } = req.query;
+    if (!q) {
+        res.send("Empty Query!")
+    }
+    res.send(`Results for @${q}`);
 });
