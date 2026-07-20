@@ -1,0 +1,38 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+#post {
+    background-color: whitesmoke;
+}
+
+h3 {
+    font-style: italic;
+}
+
+body {
+    background-color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 70, 229, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
