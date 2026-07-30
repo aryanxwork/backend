@@ -18,11 +18,16 @@
             <h4>
                 <%=post.content%>
             </h4>
+            <a href="http://localhost:8080/posts/<%=post.id%>">Read More</a>
+
+            <a href="http://localhost:8080/posts/<%=post.id%>/edit">EDIT</a>
+
             <% } %>
     </div>
     <br>
     <br>
     <a href="http://localhost:8080/posts/new" class="btn">Add New Post</a>
+
 </body>
 
 </html>
