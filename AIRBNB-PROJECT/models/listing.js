@@ -11,10 +11,13 @@ const listingSchema = new schema({
         required: true
     },
     image: {
-        type: String,
-        default: "https://pngtree.com/free-png-vectors/picture-icons",
-        set: (image) => image === "" ? "https://pngtree.com/free-png-vectors/picture-icons" : image,
-        required: true
+        filename: {
+            type: String,
+            default: "listingimage",
+        },
+        url: {
+            type: String,
+        },
     },
     price: {
         type: Number,
